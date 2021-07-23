@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box ;
+}
+
+.container > .description { display:none; }
+.container:hover > .description { display: block; }
+
+#header video {
+    object-fit: fill;
+}
+
+body {
+    background: #111;
+    background-size: cover; 
+    background-attachment: scroll
+}
+
+.restoran_logo{
+    text-align: center;
+}
+
+.hada {
+    position: absolute;
+    text-align: right;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    filter: url(#posterize);
+    max-width: 100%;
+    height: auto;
+
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.bgvideo {
+    position: fixed;
+    filter: blur(5px);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+    pointer-events: none;
+}
+  
+#adress, #tel {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "ObjektivMk1-Regular", sans-serif; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.info{
+    position: absolute;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 5%;
+    text-align: right;
+}
+
+#reserve_top {
+    float: right;
+    position: absolute;
+    font-family: 'Courier New';
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    font-size: 4.5vw;
+    line-height: 4vw;
+    margin-bottom: -10%;
+    margin-left: 12%;
+    text-shadow: 4px 4px 3px #000;
+}
+
+#album{
+    width: 100% ;
+}
+
+#album1{
+    float: right;
+    position: absolute;
+    font-family: 'Courier New';
+    width: 30rem;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    margin-bottom: -40%;
+    margin-left: 10%;
+}
+#album2{
+    float: right;
+    position: absolute;
+    font-family: 'Courier New';
+    width: 30rem;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    margin-bottom: -40%;
+    margin-left: 40%;
+}
+#album3{
+    float: right;
+    position: absolute;
+    font-family: 'Courier New';
+    max-width: 30rem;
+    height: 30rem;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    margin-bottom: -40%;
+    margin-left: 70%;
+}
