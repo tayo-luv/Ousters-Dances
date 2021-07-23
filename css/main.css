@@ -4,12 +4,12 @@ body {
     background-attachment: scroll
 }
 
-.main_all{
-    position: relative;
+.all{
+    height: 300%;
 }
 
-.album_all{
-    background-color:rgb(29, 29, 29);
+.main_all{
+    position: relative;
 }
 
 .restoran_logo{
@@ -64,29 +64,61 @@ body {
     margin: auto;
     top: 10%;
     left: 0;
-    right: 5%;
+    right: 10%;
     text-align: right;
 }
 
 #reserve_top {
     float: right;
     position: absolute;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', cursive;
+    font-weight: 10%;
     bottom: 0px;
     left: 0px;
     color: #fff;
-    font-size: 4.5rem;
-    line-height: 4rem;
-    margin-bottom: -15rem;
+    line-height: 4vw;
+    margin-bottom: -7rem;
     margin-left: 12%;
-    text-shadow: 4px 4px 3px #000;
-    width: 50rem;
-    height: 10rem;
-    background-color: rgba(255, 0, 0, 0.233);
+    text-shadow: 4px 4px 3px #111;
+}
 
-    pointer-events: none;
+#smile{ 
+    position: absolute;
+    width: fit-content;
+    top:40rem;
+    left: 200%;
+    font-size: 500%;
+    height: 6rem;
+    background-color: rgba(255, 0, 0, 0.432);
+    z-index: 1;
 }
 
 #mainblock{
     position: relative;
 }
+
+@media screen and (min-width: 701px) {
+    span#album {
+        font-size: 80px;
+    }
+    #reserve_top{
+        margin-top: -7rem;
+    }
+} 
+  
+@media screen and (max-width: 700px) {
+    span#album {
+        font-size: 10vw;
+    }
+    #reserve_top{
+        top: 65rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    span#album {
+        font-size: 11vw;
+    }
+    #reserve_top{
+        top: 75rem;
+    }
+}   

@@ -40,6 +40,7 @@
 
 article img{
     width: 45rem;
+    max-width: 100%;
 }
 
 #desktop:checked ~ #slider{
@@ -97,8 +98,9 @@ label, a{
 #active label{
     border-radius: 10px;
     display: inline-block;
+    max-width: 30%;
     width: 15rem;
-    height: 15px;
+    height: 1rem;
     background: rgb(31, 31, 31);
 }
 
@@ -115,10 +117,10 @@ label, a{
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3){
-    background: #18a3dd;
+    background: #f8d68b;
     border-color: violet !important;
 }
 
 #slides .image{
-    transition: all 800ms cubic-bezier(0.770, 0.00, 0.165, 1)
+    transition: all 200ms cubic-bezier(.5, 0, .5, 0)
 }
